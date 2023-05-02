@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 function Footer() {
 	const [inputValue, setInputValue] = useState('')
 
-    function handleInput(e) {
+	function handleInput(e) {
 		setInputValue(e.target.value)
 	}
 
@@ -20,14 +20,12 @@ function Footer() {
 				Pour les passionné·e·s de plantes 🌿🌱🌵
 			</div>
 			<div className='lmj-footer-elem'>Laissez-nous votre mail :</div>
-            <div>
-            <input
+			<input
 				placeholder='Entrez votre mail'
 				onChange={handleInput}
 				value={inputValue}
 				onBlur={handleBlur}
 			/>
-        </div>
 		</footer>
 	)
 }
