@@ -1,20 +1,14 @@
 // Header
 // Nav
-// Banner img modifier
-// Fiabilité
-// Respect
-// Service
-// Sécurité
-// footer
+import Banner from '../Components/Banner'
+import Image from '../Assets/AboutBanner.png'
 
-//import Banner from '../Components/Banner'
-//import Category from '../Components/Category'
-
-function about () {
-    return (
-        <div>
-        </div>
-    )
+function About () {
+        return(
+            <main>
+                <Banner image={Image} showText={false} />
+            </main>
+        )
 }
 
-export default about
+export default About
