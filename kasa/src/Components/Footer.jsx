@@ -1,14 +1,22 @@
+import K from '../Assets/K.png'
+import H from '../Assets/home.png'
+import S from '../Assets/S.png'
+import A from '../Assets/A.png'
 
 function Footer() {
     
-    return (
-        
-        <footer className='footer'>
-            
-            <div className='footer_item'>  
-                <p className='footer_item_texte'>© 2020 Kasa. All rights reserved</p>
+    return (        
+        <footer>
+            <div>
+            <image src={K} alt="logo de l'agence" />
+            <image src={H} alt="logo de l'agence" />
+            <image src={S} alt="logo de l'agence" />
+            <image src={A} alt="logo de l'agence" />
             </div>
-            
+                     
+            <div>  
+                <p>© 2020 Kasa. All rights reserved</p>
+            </div>            
         </footer>
     )
 }
