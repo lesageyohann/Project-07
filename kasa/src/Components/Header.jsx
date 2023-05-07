@@ -8,10 +8,10 @@ function Header() {
     return (
         <header>
             <div>
-                <image src={K} alt="logo de l'agence" />
-                <Link to="/"><image src={H} alt="logo de l'agence" /></Link>
-                <image src={S} alt="logo de l'agence" />
-                <image src={A} alt="logo de l'agence" />
+                <img src={K} alt="logo de l'agence" />
+                <Link to="/"><img src={H} alt="logo de l'agence" /></Link>
+                <img src={S} alt="logo de l'agence" />
+                <img src={A} alt="logo de l'agence" />
             </div>
             <nav>
                 <Link to="/">Accueil</Link>
