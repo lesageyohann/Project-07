@@ -1,0 +1,180 @@
+.base {
+
+    margin-bottom: 15vh;
+    &_identity {
+        display: flex;
+        margin-top: 5vh;
+        width: 100%;
+
+        @include for-tablet {
+            flex-wrap: wrap;
+            margin-top: 2vh;
+        }
+
+        &_item {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+
+            @include for-tablet {
+                width: 100%;
+            }
+
+            &_title {
+                display: flex;
+                flex-wrap: wrap;
+                color: $pink;
+
+                @include for-tablet {
+                    width: 100%;
+                }
+
+                &_h1 {
+                    letter-spacing: 5px;
+                    width: 100%;
+                }
+
+                &_address {
+                    width: 100%;
+                }
+            }
+
+            &-tag {
+                margin-top: 5vh;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                @include for-tablet {
+                    flex-wrap: wrap;
+                    margin-top: 2vh;
+                }
+
+                &_item {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 1vh;
+                    margin-top: 1vh;
+                    background-color: $pink;
+                    color: $white;
+                    padding: 0px 35px 0px 35px;
+                    border-radius: 15px;
+                    height: 35px;
+
+                    @include for-tablet {
+                        height: 30px;
+                    }
+
+                    @include for-mobile {
+                        height: 25px;
+                    }
+                }
+            }
+        }
+
+        &_profil {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            width: 20%;
+
+            @include for-tablet {
+                margin-top: 2vh;
+                width: 100%;
+                flex-direction: row-reverse;
+                flex-wrap: nowrap;
+                height: 80px;
+            }
+
+            &_name {
+                display: flex;
+                align-items: center;
+                color: $pink;
+                justify-content: flex-end;
+
+                @include for-tablet {
+                    align-items: normal;
+                }
+
+                &_N {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                &_I {
+                    display: flex;
+                    width: 50%;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        object-fit: cover;
+                        border-radius: 50%;
+
+                        @include for-tablet {
+                            width: 70px;
+                            height: 70px;
+                        }
+
+                        @include for-mobile {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+
+            &-rate {
+                margin-top: 5vh;
+                display: flex;
+                justify-content: flex-end;
+                color: $pink;
+                width: 80%;
+
+                @include for-tablet {
+                    margin-top: 0;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+
+                img {
+                    width: 22px;
+                    margin-right: 5px;
+
+                    @include for-tablet {
+                        width: 22px;
+                    }
+
+                    @include for-tablet {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_collapse {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-between;
+
+        @include for-tablet {
+            width: 100%;
+            margin-top: 0vh;
+            flex-wrap: wrap;
+        }
+
+        &_item {
+            width: calc(50% - 10px);
+
+            @include for-tablet {
+                width: 100%;
+                margin-top: 2vh;
+            }
+        }
+    }
+
+    &_footer {
+        background-color: $black;
+    }
+}

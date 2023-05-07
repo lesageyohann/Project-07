@@ -17,14 +17,14 @@ function Carousel({item}) {
             )
         }
     return (
-        <div>
-            <div>
-                <div>
+        <div className="carousel">
+            <div className="carousel_item">
+                <div className="carousel_item_image">
                     <img src={item.pictures[index]} key={index} alt="Photographie logement" />
                     
                     {item.pictures.length > 1 &&  ( 
                         
-                        <div>
+                        <div className="image-overlay">
                             {`${index + 1}/${item.pictures.length}`}
                         </div>
                     )}
@@ -32,11 +32,11 @@ function Carousel({item}) {
                     {item.pictures.length > 1 && ( 
                         <div>
 
-                            <button onClick={imageLeft}>
+                            <button className="carousel_item_image_button_L" onClick={imageLeft}>
                                 <img src={arrow} alt="photographie gauche" />
                             </button>
 
-                            <button onClick={imageRight}>
+                            <button  className="carousel_item_image_button_R" onClick={imageRight}>
                                 <img src={arrow} alt="photographie droite" />
                             </button>
 

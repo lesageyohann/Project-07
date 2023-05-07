@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+
+    &_logo {
+        @include for-tablet {
+            width: 100%;
+        }
+    }
+
+    &_nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        @include for-mobile {
+            width: 80%;
+            text-transform: uppercase;
+        }
+
+        &_bar {
+            display: flex;
+            list-style: none;
+            align-items: center;
+
+            &_button {
+                color: $pink;
+                text-decoration: none;
+                margin-left: 5vh;
+
+                @include for-tablet {
+                    margin-left: 3vh;
+                }
+
+                @include for-mobile {
+                    margin-left: 1vh;
+                }
+
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

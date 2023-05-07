@@ -2,9 +2,9 @@ function Banner({image, showText}) {
 
     return(
         
-        <div >
-            <img  src={image} alt='Photographie avec un slogan'/>
-            {showText && <h1 alt='Chez vous, partout et ailleurs'>Chez vous, partout et ailleurs</h1>}
+        <div className='div'>
+            <img className='div_image'  src={image} alt='Photographie avec un slogan'/>
+            {showText && <h1 className='div_text' alt='Chez vous, partout et ailleurs'>Chez vous, partout et ailleurs</h1>}
         </div>
     )
 }

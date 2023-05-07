@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import Error from './Pages/404'
 import About from './Pages/About'
 import Housing from './Pages/Housing'
+import './Styles/Index.scss'
 
 
 

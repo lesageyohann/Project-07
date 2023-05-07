@@ -9,6 +9,7 @@ function Stars(rating) {
     stars.push(
       <img 
         key={`star-${i}`}
+        className='base-TR_rates_icone'
         src={dataStar}
         alt='étoile'
       />

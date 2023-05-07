@@ -1,19 +1,37 @@
 import { useState} from 'react'
+import arrow from '../Assets/Arrow.png';
 
-function Collapse(props) {
-    const [open, setOPen] = useState(false)
-    const toggle = () => {setOPen(!open);};
+function Collapse({ title, content }) {
+  const [actif, setActif] = useState(false)
 
-    return (
-        <div>
-          <button onClick={toggle}>{props.label}</button>
-          {open && (
-            <div className="toggle">
-              {props.content}
-            </div>
-          )}
-        </div>
-      );
+  return (
+    
+    <div className='collapse'>
+
+      <div className='collapse_titre' title='Cliquez pour voir le contenu.' onClick={() => setActif(!actif)}>
+        <h2> {title} </h2>
+        <img
+          className={actif ? 'arrow arrow_down' : 'arrow arrow_up'}
+          src={arrow}
+          alt='Affiche le contenu.'
+          title='Cliquez pour voir le contenu.'
+        />
+      </div>
+
+      <div className={actif ? 'collapse_content_hidden' : 'collapse_content'}>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}> {item} </li>
+            ))}
+          </ul>
+        ) 
+        : <p>{content}</p>
+        }
+      </div>
+
+    </div>
+  )
 }
 
 export default Collapse

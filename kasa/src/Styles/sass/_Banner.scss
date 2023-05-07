@@ -1,0 +1,40 @@
+.div {
+    position: relative;
+    height: 250px;
+    margin-top: 5vh;
+
+    @include for-tablet {
+        height: 200px
+    }
+
+    @include for-mobile {
+        height: 150px
+    }
+
+    &_image {
+        max-height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    &_text {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        color: $white;
+
+        @include for-tablet {
+            text-align: left;
+            width: 70%;
+        }
+
+        @include for-mobile {
+            height: 150px;
+            top: 25%;
+        }
+    }
+}

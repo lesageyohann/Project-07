@@ -4,7 +4,7 @@ import Stars from './Star';
 function Score({item}) {
 
     return (
-        <div>
+        <div className='base-TR_rate' >
             {Stars(item.rating)}
         </div>
     )
