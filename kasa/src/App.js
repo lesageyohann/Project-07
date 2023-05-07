@@ -14,13 +14,9 @@ function App() {
   const [Data, setData] = useState([])
 
   useEffect(() => {  
-    fetch('./kasa-data.json')
-      .then(response => {
-        return response.json()
-      })
-      .then(jsonData => {
-        setData(jsonData)
-      })
+    fetch('./Data/kasa-data.json')
+      .then(response => {return response.json()})
+      .then(jsonData => {setData(jsonData)})
       .catch(error => console.error('Erreur : ', error))    
   }, [])
 
