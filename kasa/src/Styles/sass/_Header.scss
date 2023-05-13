@@ -10,7 +10,7 @@
     &_nav {
         display: flex;
         justify-content: flex-end;
-        width: 100%;
+        width: 84%;
 
         @include for-mobile {
             width: 80%;

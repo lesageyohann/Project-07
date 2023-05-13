@@ -11,23 +11,13 @@ import './Styles/Index.scss'
 
 
 function App() {
-
-  const [Data, setData] = useState([])
-
-  useEffect(() => {  
-    fetch('./Data/kasa-data.json')
-      .then(response => {return response.json()})
-      .then(jsonData => {setData(jsonData)})
-      .catch(error => console.error('Erreur : ', error))    
-  }, [])
-
   
     return (
         <div className='App'>
           <Header />
             <Routes>
-              <Route path='/' element={<Home Data={Data}/>} />
-              <Route path='/Housing/:id' element={<Housing Data={Data}/>} />
+              <Route path='/' element={<Home />} />
+              <Route path='/Housing/:id' element={<Housing />} />
               <Route path='/About' element={<About />} />
               <Route path="*" element={<Error />} />
             </Routes>
