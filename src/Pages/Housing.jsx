@@ -1,6 +1,7 @@
 import Collapse from '../Components/Collapse'
 import Carousel from '../Components/Carousel'
 import Category from '../Components/Category'
+import Error from '../Pages/404'
 import Star from '../Components/Score'
 import { useParams } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
@@ -19,9 +20,15 @@ function Housing() {
         .then(jsonData => {  
           let itemAppart = jsonData.find((item) => item.id === id)
           setItem(itemAppart)
-          console.log(itemAppart)})
+          })
         .catch(error => console.error('Erreur : ', error))    
     }, [id])
+
+    if (!item) {
+        return (
+          <Error />
+        )
+      }
 
 
         return (

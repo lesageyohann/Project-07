@@ -12,8 +12,9 @@ function Home() {
     fetch('./Data/kasa-data.json')
       .then(response => {return response.json()})
       .then(jsonData => {setData(jsonData)})
-      .catch(error => console.error('Erreur : ', error))    
+      .catch(error => console.error('Erreur : ', error))     
   }, [])
+
     return(
         <main>
             <Banner image={Image} showText={true} />

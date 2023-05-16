@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Header from './Components/Header'
 import Home from './Pages/Home'
@@ -16,7 +15,7 @@ function App() {
         <div className='App'>
           <Header />
             <Routes>
-              <Route path='/' element={<Home />} />
+              <Route path='/' element={<Home />}/>
               <Route path='/Housing/:id' element={<Housing />} />
               <Route path='/About' element={<About />} />
               <Route path="*" element={<Error />} />
