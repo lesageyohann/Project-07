@@ -19,16 +19,15 @@ function Housing() {
         .then(response => {return response.json()})
         .then(jsonData => {  
           let itemAppart = jsonData.find((item) => item.id === id)
-          setItem(itemAppart)
+          if (!itemAppart) {
+            return (
+              <Error />
+            )
+          }
+          setItem(itemAppart)          
           })
         .catch(error => console.error('Erreur : ', error))    
     }, [id])
-
-    if (!item) {
-        return (
-          <Error />
-        )
-      }
 
 
         return (
@@ -61,8 +60,7 @@ function Housing() {
                         <Collapse label="Equiepements" title="Equipements" content={item.equipments}/>
                         </div>
                     </section>
-                </main>
-            
+                </main>            
         )    
 }
 

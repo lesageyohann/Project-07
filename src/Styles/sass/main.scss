@@ -9,7 +9,6 @@
 }
 
 body {
-  margin: 3%;
   background-color: $white;
 
   @include for-tablet {
@@ -106,4 +105,8 @@ li {
   @include for-mobile {
     font-size: 14px;
   }
+}
+
+.main-home{
+  margin: 3%;
 }

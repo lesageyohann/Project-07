@@ -1,7 +1,5 @@
-import K from '../Assets/K.svg'
-import H from '../Assets/home.svg'
-import S from '../Assets/S.svg'
-import A from '../Assets/A.svg'
+import logo from '../Assets/logo-alt.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     
@@ -9,10 +7,7 @@ function Footer() {
         <footer className='footer'>
             <div className='footer_item'>
                 <div className='footer_item_logo'>
-                <img src={K} alt="logo de l'agence" />
-                <img src={H} alt="logo de l'agence" />
-                <img src={S} alt="logo de l'agence" />
-                <img src={A} alt="logo de l'agence" />
+                <Link to="/"><img src={logo} alt="logo de l'agence" /></Link>
                 </div>                     
                 <div>  
                     <p className='footer_item_paragraphe'>© 2020 Kasa. All rights reserved</p>

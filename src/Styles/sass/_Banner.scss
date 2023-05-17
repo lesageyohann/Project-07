@@ -1,7 +1,6 @@
 .div {
     position: relative;
     height: 250px;
-    margin-top: 5vh;
 
     @include for-tablet {
         height: 200px

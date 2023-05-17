@@ -16,7 +16,7 @@ function Home() {
   }, [])
 
     return(
-        <main>
+        <main className='main-home'>
             <Banner image={Image} showText={true} />
             <Card Data={Data} />
         </main>
