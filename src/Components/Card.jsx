@@ -10,7 +10,7 @@ function Card({Data}) {
                 <div className='card_housing_image'>
                   <img src={item.cover} alt='Photographie du logement' />    
                   <div className='card_housing_image_titre'>
-                    <h4>{item.title}</h4>
+                    <h4 className='card_housing_image_titre_texte'>{item.title}</h4>
                   </div>    
                 </div>    
               </Link>

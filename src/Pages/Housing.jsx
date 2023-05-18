@@ -24,7 +24,7 @@ function Housing() {
               <Error />
             )
           }
-          setItem(itemAppart)          
+          setItem(itemAppart)     
           })
         .catch(error => console.error('Erreur : ', error))    
     }, [id])
