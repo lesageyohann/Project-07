@@ -13,7 +13,7 @@ function Header() {
     return (
         <header className="header">
             <div className="header_logo">
-                <Link to="/"><img src={logo} alt="logo de l'agence" /></Link>
+                <Link className="header_logo_img" to="/"><img src={logo} alt="logo de l'agence" /></Link>
             </div>
             <nav className="header_nav">
                 <ul className="header_nav_bar">
